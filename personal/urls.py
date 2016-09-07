@@ -1,4 +1,4 @@
-"""django_web_dev URL Configuration
+"""personal URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/dev/topics/http/urls/
@@ -14,9 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url, include
-from django.contrib import admin
+from . import views 
 
 urlpatterns = [
-               url(r'^admin/', admin.site.urls),
-               url(r'^$', include('personal.urls')),
+               url(r'^$', views.index, name='index'),
               ]
