@@ -19,4 +19,6 @@ from . import views
 urlpatterns = [
                url(r'^$', views.index, name='index'),
                url(r'^contact/$', views.contact, name='contact'),
+               url(r'^experience/$', views.experience, name='experience'),
+               url(r'^formation/$', views.formation, name='formation'),
               ]
