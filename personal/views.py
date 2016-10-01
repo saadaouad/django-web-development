@@ -12,3 +12,5 @@ def experience(request):
 def formation(request):
 	return render(request, 'personal/formation.html')
 
+def hobbies(request):
+	return render(request, 'personal/hobbies.html')
