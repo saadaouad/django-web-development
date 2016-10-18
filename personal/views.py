@@ -14,3 +14,6 @@ def formation(request):
 
 def hobbies(request):
 	return render(request, 'personal/hobbies.html')
+
+def error(request):
+	return render(request, 'personal/404.html')
