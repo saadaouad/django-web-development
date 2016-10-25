@@ -4169,6 +4169,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
+.required:after {
+    color: #FFD700;
+    content: ' *';
+    font-size: 1.2em;
+}
 @media (min-width: 768px) {
   .navbar {
     border-radius: 4px;
