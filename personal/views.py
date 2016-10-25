@@ -20,3 +20,4 @@ def error(request):
 
 def thanks(request):
 	return render(request, 'personal/thanks.html')
+	
