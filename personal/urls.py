@@ -22,5 +22,6 @@ urlpatterns = [
                url(r'^experience/$', views.experience, name='experience'),
                url(r'^formation/$', views.formation, name='formation'),
                url(r'^hobbies/$', views.hobbies, name='hobbies'),
+               url(r'^thanks/$', views.thanks, name='thanks'),
                url(r'^', views.error, name='error'),
               ]

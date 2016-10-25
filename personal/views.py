@@ -17,3 +17,6 @@ def hobbies(request):
 
 def error(request):
 	return render(request, 'personal/404.html')
+
+def thanks(request):
+	return render(request, 'personal/thanks.html')
