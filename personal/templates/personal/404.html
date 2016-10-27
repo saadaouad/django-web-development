@@ -7,33 +7,81 @@
 	{% load staticfiles %}
 	<link rel="shortcut icon" href="{% static 'personal/img/12642574_10204180688076225_4677165812812521837_n.ico' %}" type="image/x-icon" />
 	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.css' %}" type = "text/css"/>
 	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	<meta name="twitter:image" content="personal/img/pic.jpg">
 	<style type="text/css">
 		html,
 		body {
 		  height:100%
 		}
+		.error-404 {
+    	margin-top: 30px;
+    	margin-bottom: 20px;
+  	}
+  	.error-404 h1 {
+    	font-size: 50px;
+  	}
+  	.error-404 h4 {
+    	line-height: 30px;
+    	margin: 30px 0;
+  	}
 	</style>
 </head>
 
 <body class="body" style="background-color:#f6f6f6">
 	<div class="container-fluid" style="min-height:95%; ">
 		<div class="row">
-			<br>
-			<center>
-				<h1>404 PAGE NOT FOUND</h1>
-				<hr size="30"> 
-			</center>
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+				    <a href='/'>
+					<img src="{% static 'personal/img/pic.jpg' %}" class="responsive-img" style='max-height:80px;' alt="face">
+					</a>
+				  </center>
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <center>
+						<h1>I'm a web developer</h1>
+					  <h1>& Passionate about new technologies</h1>
+				  </center>
+			  </div>
 		</div><hr>
-		<br>
-		<br>
-		<br>
+
 		<div class="row">
-			<center>
-				<img src="{% static 'personal/img/pic2.jpg' %}" width=40% height=40%>
-		  </center>
+		  <div class="col-sm-2">
+		  <br>
+
+		  <br>
+		   <!-- Great, til you resize. -->
+			<!--<div class="well bs-sidebar affix" id="sidebar" style="background-color:#fff">-->
+			<div class="well bs-sidebar" id="sidebar" style="background-color:#fff">
+			  <ul class="nav nav-pills nav-stacked">
+				<li><a href='/'>Home</a></li>
+				<!--<li><a href='/blog/'>Blog</a></li>-->
+				<li><a href='/experience/'>Experience</a></li>
+				<li><a href='/formation/'>Formation</a></li>
+				<li><a href='/hobbies/'>Hobby</a></li>
+				<li><a href='/contact/'>Contact</a></li>
+			  </ul>
+			</div> <!--well bs-sidebar affix-->
+		  </div> <!--col-sm-2-->
+		  <div class="col-sm-10">
+
+			<div class='container-fluid'>
+			<br><br>
+			<div class="row error-404">
+    		<div class="col-md-push-4 col-md-5">
+      		<h1>Oops 404!</h1>
+					<h2>What does 404 mean anyway?</h2>
+					<h4>We couldn’t find that page. It either moved or doesn’t exist anymore.</h4>
+				</div>
+			</div>
+			</div>
+		  </div>
 		</div>
 	</div>
 	<footer>
