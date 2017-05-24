@@ -1,5 +1,9 @@
-FROM docker/whalesay:latest
+FROM django
 
-RUN apt-get -y update && apt-get install -y fortunes
+ADD . /my-django-app
 
-CMD /usr/games/fortune -a | cowsay
+WORKDIR /my-django-app
+
+RUN pip install -r requirements.txt
+
+CMD [ "python", "./manage.py runserver 0.0.0.0:8000" ]
