@@ -1,5 +1,4 @@
-# my-blog
-
+# django-web-development
 ## Usage
 
 ### Run app with Docker
